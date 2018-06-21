@@ -74,6 +74,10 @@ section {
 	display: block;
 }
 
+h6 {
+  display: none;
+}
+
 section {
   z-index: 2;
 }
