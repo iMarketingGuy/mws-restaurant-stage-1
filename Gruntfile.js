@@ -13,28 +13,26 @@ module.exports = function(grunt) {
     responsive_images: {
       dev: {
         options: {
-          //engine: 'im',
+          engine: 'gm',
           sizes: [{
-            name: 'small',
-            width: 300
+            //name: 'small',
+            width: 300,
+            rename: false,
+            //separator: "-",
+            suffix: "_x1"
           },{
-            name: 'medium',
+            //name: 'medium',
             width: 600,
-            separator: "-",
+            rename: false,
+            //separator: "-",
             suffix: "_x2"
           },{
-            name: 'large',
-            width: 900,
-            separator: "-",
-            suffix: "_x3"
-          },{
-            name: 'xlarge',
-            width: 1200,
-            separator: "-",
-            suffix: "_x4"
+            //name: 'large',
+            width: 800,
+            rename: false,
             //separator: "-",
-            //suffix: "_x2",
-            //quality: 0.6
+            suffix: "_x3",
+            //quality: .6
           }]
         },
 
