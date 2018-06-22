@@ -19,19 +19,19 @@ module.exports = function(grunt) {
             width: 300,
             rename: false,
             //separator: "-",
-            suffix: "_x1"
+            //suffix: "-x1"
           },{
             //name: 'medium',
             width: 600,
             rename: false,
             //separator: "-",
-            suffix: "_x2"
+            suffix: "-x2"
           },{
             //name: 'large',
             width: 800,
             rename: false,
             //separator: "-",
-            suffix: "_x3",
+            suffix: "-x3",
             //quality: .6
           }]
         },
