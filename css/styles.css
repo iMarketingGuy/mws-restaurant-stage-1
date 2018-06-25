@@ -83,6 +83,7 @@ h6 {
 }
 
 section {
+  width: 100%;
   z-index: 2;
 }
 
@@ -182,6 +183,7 @@ nav h1 a {
 #map {
   height: 200px;
   width: 100%;
+  max-width: 1960px;
   background-color: #ccc;
 }
 
