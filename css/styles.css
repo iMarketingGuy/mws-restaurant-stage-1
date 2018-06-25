@@ -218,6 +218,10 @@ nav h1 a {
   max-width: 174px;
 }
 
+#filter-options select:focus {
+  color: #ddd;
+  background-color: #111;
+}
 
 /* ====================== Restaurant Listing ====================== */
 
