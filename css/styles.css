@@ -161,7 +161,7 @@ nav h1 a {
 /* Add a color to all links inside the list */
 #breadcrumb li a {
   padding: 5px;
-  color: #0275d8;
+  color: #0067cc;
   text-decoration: none;
 }
 
@@ -290,7 +290,7 @@ nav h1 a {
   color: #ddd;
 }
 
-#restaurants-list li a {
+#restaurants-list button {
   background-color: #111;
   color: #18aff0;
   display: inline-block;
@@ -304,16 +304,22 @@ nav h1 a {
   border: 1px solid transparent;
 }
 
-#restaurants-list li a:hover {
+#restaurants-list button:hover {
   color: #fff;
   border: 1px solid #18aff0;
   transition: 300ms ease;
 }
 
-#restaurants-list li a:focus {
+#restaurants-list button:focus {
   color: #18aff0;
   border: 1px solid darkorange;
   transition: 300ms ease;
+}
+
+#restaurants-list button:active {
+  color: #fff;
+  border: 1px solid darkorange;
+  text-decoration: underline;
 }
 
 
@@ -389,7 +395,7 @@ nav h1 a {
   max-width: 687px;
   margin: 0 auto;
   padding: 0 15px;
-  color: #f58500;
+  color: #ff8a00;
   font-size: 24pt;
   font-weight: 300;
 }
@@ -411,28 +417,40 @@ nav h1 a {
   grid-gap: 0;
 }
 
+#reviews-list h3 {
+  margin: 2px 0;
+  font-weight: normal;
+}
+
 #reviews-list li p {
   margin: 0;
   padding: 3px;
-  border: 0px solid #777;
 }
 
-#reviews-list li p:nth-child(1) {
+#reviews-list .name {
   font-size: 14pt;
   color: #333;
 }
 
-#reviews-list li p:nth-child(2) {
+#reviews-list .date {
   font-size: 9pt;
   color: #696969;
 }
 
-#reviews-list li p:nth-child(3) {
-  font-size: 14pt;
-  color: #18AFF0;
+#reviews-list .rating {
+  margin: 5px 0 0;
+  font-size: 12pt;
+  color: #696969;
 }
 
-#reviews-list li p:nth-child(4) {
+.rating span {
+  margin-left: 5px;
+  font-size: 17pt;
+  color: #0070dd;
+  font-weight: bold;
+}
+
+#reviews-list .comment {
   font-size: 12pt;
   margin: 15px 0 0;
 }
@@ -469,7 +487,7 @@ nav h1 a {
     grid-gap: 0;
   }
 
-  #reviews-list li p:nth-child(4) {
+  #reviews-list .comment {
     font-size: 12pt;
     grid-row: 1 / 5;
     grid-column: 2;
