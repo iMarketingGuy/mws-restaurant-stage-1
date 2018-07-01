@@ -227,11 +227,15 @@ nav h1 a {
 
 /* ====================== Restaurant Listing ====================== */
 
+#restaurants {
+  background-color: #555;
+}
+
 #restaurants-list {
   width: 100%;
-  background-color: #555;
+  max-width: 970px;
   list-style: outside none none;
-  margin: 0;
+  margin: 0 auto;
   padding: 30px 1px 60px;
   text-align: center;
   display: flex;
@@ -244,7 +248,7 @@ nav h1 a {
   font-family: Arial,sans-serif;
   margin: 5px;
   text-align: left;
-  max-width: 299px;
+  max-width: 300px;
   min-height: 400px;
   display: flex;
   flex-wrap: wrap;
