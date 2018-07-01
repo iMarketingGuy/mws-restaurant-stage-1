@@ -166,6 +166,9 @@ createRestaurantHTML = (restaurant) => {
   }
   li.append(more)
 
+  /*li.onclick = function() {
+    window.location = DBHelper.urlForRestaurant(restaurant);
+  }*/
   return li
 }
 
