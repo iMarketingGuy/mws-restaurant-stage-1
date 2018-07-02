@@ -447,13 +447,13 @@ nav h1 a {
 }
 
 #reviews-list .date {
-  font-size: 9pt;
+  font-size: 10pt;
   color: #696969;
 }
 
 #reviews-list .rating {
   margin: 5px 0 0;
-  font-size: 12pt;
+  font-size: 10pt;
   color: #696969;
 }
 
