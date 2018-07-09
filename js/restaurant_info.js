@@ -68,6 +68,9 @@ fillRestaurantHTML = (restaurant = self.restaurant) => {
   const cuisine = document.getElementById('restaurant-cuisine');
   cuisine.innerHTML = restaurant.cuisine_type;
 
+  const neighborhood = document.getElementById('neighborhood');
+  neighborhood.innerHTML = restaurant.neighborhood;
+
   // fill operating hours
   if (restaurant.operating_hours) {
     fillRestaurantHoursHTML();

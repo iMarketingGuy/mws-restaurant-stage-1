@@ -17,7 +17,7 @@ td,
 th,
 p {
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 10pt;
+	font-size: 12pt;
 	color: #333;
 	line-height: 1.5;
 }
@@ -198,7 +198,7 @@ nav h1 a {
   width: 100%;
   margin: 200px 0 0;
   padding: 5px;
-  background-color: #0072A4;
+  background-color: #0072a4;
   grid-area: filter;
 }
 
@@ -344,7 +344,7 @@ nav h1 a {
   display: grid;
   justify-content: center;
   align-content: flex-start;
-  align-items: flex-start;
+  align-items: baseline;
   margin-top: 200px;
   padding: 15px;
   background-color: #111;
@@ -364,22 +364,36 @@ nav h1 a {
 #restaurant-img {
 	width: 100%;
   max-width: 300px;
+  margin: 15px 0 75px 0;
 }
 
-#restaurant-cuisine {
-  max-width: 300px;
-  background-color: #333;
+#restaurant-cuisine,
+.inside #neighborhood {
   color: #ddd;
-  font-size: 12pt;
+  font-size: 10pt;
   font-weight: 300;
-  letter-spacing: 10px;
-  margin: 0 0 20px;
-  padding: 2px 0;
+  letter-spacing: 3px;
+  margin: 0;
+  padding: 5px 5px 5px 7px;
   text-align: center;
-  text-transform: uppercase;
+  justify-self: baseline;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #0072a4;
+  border: 1px solid #000;
+  box-shadow: 4px 4px 10px #000;
+}
+
+.inside #neighborhood {
+  background-color: #811411;
+  border-bottom-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 #restaurant-address {
+  margin: 15px 0 0;
   font-size: 12pt;
   color: #eee;
 }
@@ -406,7 +420,8 @@ nav h1 a {
 
 #reviews-container h2 {
   width: 100%;
-  max-width: 687px;
+  /*max-width: 687px;*/
+  max-width: 750px;
   margin: 0 auto;
   padding: 0 15px;
   color: #ff8a00;
@@ -415,7 +430,7 @@ nav h1 a {
 }
 
 #reviews-list {
-  max-width: 687px;
+  max-width: 750px;
   margin: 0 auto;
   padding: 0;
 }
@@ -532,25 +547,34 @@ nav h1 a {
   }
 
   .inside #restaurant-img {
-    align-self: flex-end;
+    grid-row: span 2;
+    align-self: normal;
+    margin-bottom: 0;
   }
 
   .inside #restaurant-cuisine {
     grid-column-start: 1;
+    grid-row-start: 2;
+  }
+
+  .inside #neighborhood {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    align-self: baseline;
+    margin-left: 15px;
   }
 
   .inside #restaurant-address {
     grid-column-start: 2;
-    grid-row-start: 2;
+    grid-row-start: 3;
     align-self: baseline;
-    margin: 25px 0 0;
     padding: 0 0 0 15px;
   }
 
   .inside #restaurant-hours {
     grid-column-start: 2;
-    grid-row-start: 2;
-    margin: 40px 0 0;
+    grid-row-start: 4;
+    margin: 0;
     padding: 15px;
   }
 
