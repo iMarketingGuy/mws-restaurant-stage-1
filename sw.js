@@ -9,7 +9,8 @@ var urlsToCache = [
 	'/js/dbhelper.js',
 	'/js/main.js',
 	'/js/register.js',
-	'/js/restaurant_info.js'
+	'/js/restaurant_info.js',
+	'/img/na.jpg'
 ];
 
 self.addEventListener('install', event => {
@@ -59,7 +60,8 @@ self.addEventListener('fetch', event => {
 */
 
 /* moz */
-// produces errors from chrome extensions
+// produces errors from chrome extensions?
+
 self.addEventListener('fetch', event => {
   event.respondWith(
 	caches.match(event.request)
