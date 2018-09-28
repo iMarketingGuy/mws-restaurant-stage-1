@@ -425,7 +425,7 @@ nav h1 a {
   background-color: #555;
 }
 
-#reviews-container h2 {
+#reviews-container h3 {
   width: 100%;
   /*max-width: 687px;*/
   max-width: 750px;
@@ -453,7 +453,7 @@ nav h1 a {
   grid-gap: 0;
 }
 
-#reviews-list h3 {
+#reviews-list h4 {
   margin: 2px 0;
   font-weight: normal;
 }

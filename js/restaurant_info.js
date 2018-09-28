@@ -95,7 +95,8 @@ fillRestaurantHTML = (restaurant = self.restaurant) => {
   const parts = imageURL.split(".");
   image.src = imageURL;
   image.srcset = parts[0] + '-x2.' + parts[1] + ' 2x,' + parts[0] + '-x3.' + parts[1] + ' 3x';
-  image.alt = "";
+  //image.alt = "";
+  image.alt = `Image of restaurant ${restaurant.name}`
 
   const cuisine = document.getElementById('restaurant-cuisine');
   cuisine.innerHTML = restaurant.cuisine_type;
@@ -136,7 +137,8 @@ fillRestaurantHoursHTML = (operatingHours = self.restaurant.operating_hours) => 
  */
 fillReviewsHTML = (reviews = self.restaurant.reviews) => {
   const container = document.getElementById('reviews-container');
-  const title = document.createElement('h2');
+  //const title = document.createElement('h2');
+  const title = document.createElement('h3');
   title.innerHTML = 'Reviews';
   container.appendChild(title);
 
@@ -159,17 +161,17 @@ fillReviewsHTML = (reviews = self.restaurant.reviews) => {
 createReviewHTML = (review) => {
   const li = document.createElement('li');
 
-  const name = document.createElement('h3');
+  const name = document.createElement('h4');
   name.className = 'name';
   name.innerHTML = review.name;
   li.appendChild(name);
 
-  const date = document.createElement('h3');
+  const date = document.createElement('h4');
   date.className = 'date';
   date.innerHTML = review.date;
   li.appendChild(date);
 
-  const rating = document.createElement('h3');
+  const rating = document.createElement('h4');
   rating.className = 'rating';
   rating.innerHTML = `rating:<span>${review.rating}</span>`;
   li.appendChild(rating);
