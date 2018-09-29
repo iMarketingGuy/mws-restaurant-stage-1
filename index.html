@@ -14,6 +14,9 @@
 <body>
   <h6>Restaurant Reviews Web App</h6>
   <header id="header">
+    <div id="skipLink">
+      <a href="#skippedTo">Skip to restaurant filter</a>
+    </div>
     <nav>
       <h1><a href="/">Restaurant Reviews</a></h1>
     </nav>
@@ -25,6 +28,7 @@
       <div id="map"></div>
     </section>
     <section id="filter-options">
+      <a name="skippedTo" class="skippedTo"></a>
       <h2>Filter Results</h2>
       <select id="neighborhoods-select" name="neighborhoods" aria-label="Choose neighborhood" onchange="updateRestaurants()">
         <option value="all">All Neighborhoods</option>
